@@ -20,3 +20,13 @@ require('lualine').setup {
   },
 }
 
+require('lsp')
+
+lsp_signature_cfg = {
+    hint_prefix = "",
+    floating_window = false
+}
+require "lsp_signature".setup(lsp_signature_cfg)
+
+require('nvim-autopairs').setup {}
+

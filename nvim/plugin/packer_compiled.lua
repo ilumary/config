@@ -74,6 +74,26 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["cmp-buffer"] = {
+    loaded = true,
+    path = "/Users/christophbritsch/.local/share/nvim/site/pack/packer/start/cmp-buffer",
+    url = "https://github.com/hrsh7th/cmp-buffer"
+  },
+  ["cmp-cmdline"] = {
+    loaded = true,
+    path = "/Users/christophbritsch/.local/share/nvim/site/pack/packer/start/cmp-cmdline",
+    url = "https://github.com/hrsh7th/cmp-cmdline"
+  },
+  ["cmp-nvim-lsp"] = {
+    loaded = true,
+    path = "/Users/christophbritsch/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
+    url = "https://github.com/hrsh7th/cmp-nvim-lsp"
+  },
+  ["cmp-path"] = {
+    loaded = true,
+    path = "/Users/christophbritsch/.local/share/nvim/site/pack/packer/start/cmp-path",
+    url = "https://github.com/hrsh7th/cmp-path"
+  },
   fzf = {
     loaded = true,
     path = "/Users/christophbritsch/.local/share/nvim/site/pack/packer/start/fzf",
@@ -89,6 +109,11 @@ _G.packer_plugins = {
     path = "/Users/christophbritsch/.local/share/nvim/site/pack/packer/start/gruvbox",
     url = "https://github.com/morhetz/gruvbox"
   },
+  ["lsp_signature.nvim"] = {
+    loaded = true,
+    path = "/Users/christophbritsch/.local/share/nvim/site/pack/packer/start/lsp_signature.nvim",
+    url = "https://github.com/ray-x/lsp_signature.nvim"
+  },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/Users/christophbritsch/.local/share/nvim/site/pack/packer/start/lualine.nvim",
@@ -98,6 +123,16 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/christophbritsch/.local/share/nvim/site/pack/packer/start/nvim-autopairs",
     url = "https://github.com/windwp/nvim-autopairs"
+  },
+  ["nvim-cmp"] = {
+    loaded = true,
+    path = "/Users/christophbritsch/.local/share/nvim/site/pack/packer/start/nvim-cmp",
+    url = "https://github.com/hrsh7th/nvim-cmp"
+  },
+  ["nvim-lspconfig"] = {
+    loaded = true,
+    path = "/Users/christophbritsch/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
+    url = "https://github.com/neovim/nvim-lspconfig"
   },
   ["onedark.nvim"] = {
     loaded = true,
@@ -123,6 +158,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/christophbritsch/.local/share/nvim/site/pack/packer/start/vim-colortuner",
     url = "https://github.com/zefei/vim-colortuner"
+  },
+  ["vim-vsnip"] = {
+    loaded = true,
+    path = "/Users/christophbritsch/.local/share/nvim/site/pack/packer/start/vim-vsnip",
+    url = "https://github.com/hrsh7th/vim-vsnip"
   }
 }
 

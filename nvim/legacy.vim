@@ -47,7 +47,7 @@ au FileType cpp set formatprg=clang-format | set equalprg=clang-format
 set foldlevelstart=99
 
 " rainbow parens
-let g:rainbow_active = 1
+" let g:rainbow_active = 1
 
 " rust config
 let g:rustfmt_autosave = 1
@@ -117,10 +117,10 @@ set incsearch
 set t_Co=256
 
 " colorcolumn 80 when opening C/C++
-autocmd BufRead,BufNewFile *.c setlocal colorcolumn=80
-autocmd BufRead,BufNewFile *.h setlocal colorcolumn=80
-autocmd BufRead,BufNewFile *.cpp setlocal colorcolumn=80
-autocmd BufRead,BufNewFile *.hpp setlocal colorcolumn=80
+autocmd BufRead,BufNewFile *.c setlocal
+autocmd BufRead,BufNewFile *.h setlocal
+autocmd BufRead,BufNewFile *.cpp setlocal
+autocmd BufRead,BufNewFile *.hpp setlocal
 autocmd BufRead,BufNewFile *.c SetTab 4
 autocmd BufRead,BufNewFile *.h SetTab 4
 autocmd BufRead,BufNewFile *.cpp SetTab 4
