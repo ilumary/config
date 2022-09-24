@@ -21,6 +21,7 @@ require('lualine').setup {
 }
 
 require('lsp')
+require('nvimcmp')
 
 lsp_signature_cfg = {
     hint_prefix = "",
@@ -29,4 +30,10 @@ lsp_signature_cfg = {
 require "lsp_signature".setup(lsp_signature_cfg)
 
 require('nvim-autopairs').setup {}
+
+require('nvim-treesitter.configs').setup {
+    highlight = {
+        enable = true,
+    },
+}
 

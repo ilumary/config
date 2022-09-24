@@ -58,7 +58,7 @@ require('lspconfig').clangd.setup{
     "--inlay-hints",
     "--header-insertion-decorators",
   },
-  filetypes = {"c", "cpp", "objc", "objcpp"},
+  filetypes = {"c", "cpp", "objc", "objcpp", "h", "hpp"},
   -- root_dir = utils.root_pattern("compile_commands.json", "compile_flags.txt", ".git")
   init_option = { fallbackFlags = {  "-std=c++2a"  } }
 }

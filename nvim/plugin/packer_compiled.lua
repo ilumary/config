@@ -134,6 +134,11 @@ _G.packer_plugins = {
     path = "/Users/christophbritsch/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
+  ["nvim-treesitter"] = {
+    loaded = true,
+    path = "/Users/christophbritsch/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
+    url = "https://github.com/nvim-treesitter/nvim-treesitter"
+  },
   ["onedark.nvim"] = {
     loaded = true,
     path = "/Users/christophbritsch/.local/share/nvim/site/pack/packer/start/onedark.nvim",
@@ -143,11 +148,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/christophbritsch/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
-  },
-  rainbow = {
-    loaded = true,
-    path = "/Users/christophbritsch/.local/share/nvim/site/pack/packer/start/rainbow",
-    url = "https://github.com/luochen1990/rainbow"
   },
   ["rust.vim"] = {
     loaded = true,

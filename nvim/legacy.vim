@@ -13,20 +13,8 @@ au BufEnter,BufNew *.hpp nnoremap <silent> ;xp :rightbelow split %<.cpp<CR>
 " surround with std::optional
 nnoremap <silent> ;cso :execute 's/\(' . expand('<cWORD>') . '\)/std::optional<\1>'<CR>:noh<CR>
 
-" zig config
-au FileType zig nmap <Leader>dt <cmd>lua vim.lsp.buf.definition()<CR>
-au FileType zig nmap <Leader>h  <cmd>lua vim.lsp.buf.hover()<CR>
-au FileType zig nmap <Leader>p  <cmd>lua vim.lsp.buf.signature_help()<CR>
-au FileType zig nmap <Leader>gd  <cmd>lua vim.lsp.buf.document_symbol()<CR>
-au FileType zig setlocal omnifunc=v:lua.vim.lsp.omnifunc
-
 " enable history for fzf
 let g:fzf_history_dir = '~/.local/share/fzf-history'
-
-" easy-motion
-" disable default mappings, turn on case-insensitivity
-let g:EasyMotion_do_mapping = 0
-let g:EasyMotion_smartcase = 1
 
 " faster updates!
 set updatetime=100
@@ -41,13 +29,10 @@ set autoread
 noremap <silent> ;f gg=G``:w<CR>
 
 " language-specific formatters
-au FileType cpp set formatprg=clang-format | set equalprg=clang-format
+" au FileType cpp set formatprg=clang-format | set equalprg=clang-format
 
 " no folds, ever
 set foldlevelstart=99
-
-" rainbow parens
-" let g:rainbow_active = 1
 
 " rust config
 let g:rustfmt_autosave = 1
@@ -62,7 +47,6 @@ set grepprg=rg\ --vimgrep\ --smart-case\ --follow
 let g:gruvbox_contrast_dark='medium'
 let g:gruvbox_contrast_light='hard'
 colorscheme gruvbox
-hi LspCxxHlGroupMemberVariable guifg=#83a598
 
 " Syntax highlighting
 syntax on
@@ -117,10 +101,6 @@ set incsearch
 set t_Co=256
 
 " colorcolumn 80 when opening C/C++
-autocmd BufRead,BufNewFile *.c setlocal
-autocmd BufRead,BufNewFile *.h setlocal
-autocmd BufRead,BufNewFile *.cpp setlocal
-autocmd BufRead,BufNewFile *.hpp setlocal
 autocmd BufRead,BufNewFile *.c SetTab 4
 autocmd BufRead,BufNewFile *.h SetTab 4
 autocmd BufRead,BufNewFile *.cpp SetTab 4

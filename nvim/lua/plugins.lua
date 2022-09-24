@@ -13,14 +13,11 @@ local packer_bootstrap = ensure_packer()
 
 return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
-  use 'morhetz/gruvbox'
   use 'mjlbach/onedark.nvim'
   use 'nvim-lualine/lualine.nvim'
   use 'junegunn/fzf'
   use 'junegunn/fzf.vim'
-  use 'zefei/vim-colortuner'
   use 'windwp/nvim-autopairs'
-  use 'luochen1990/rainbow'
   use 'rust-lang/rust.vim'
   use 'neovim/nvim-lspconfig'
   use 'ray-x/lsp_signature.nvim'
@@ -30,6 +27,9 @@ return require('packer').startup(function(use)
   use 'hrsh7th/cmp-cmdline'
   use 'hrsh7th/nvim-cmp'
   use 'hrsh7th/vim-vsnip'
+  use 'zefei/vim-colortuner'
+  use 'morhetz/gruvbox'
+  use 'nvim-treesitter/nvim-treesitter'
 
   if packer_bootstrap then
     require('packer').sync()
