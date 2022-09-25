@@ -30,6 +30,7 @@ return require('packer').startup(function(use)
   use 'zefei/vim-colortuner'
   use 'morhetz/gruvbox'
   use 'nvim-treesitter/nvim-treesitter'
+  use 'theHamsta/nvim-semantic-tokens'
 
   if packer_bootstrap then
     require('packer').sync()

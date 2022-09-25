@@ -106,6 +106,10 @@ autocmd BufRead,BufNewFile *.h SetTab 4
 autocmd BufRead,BufNewFile *.cpp SetTab 4
 autocmd BufRead,BufNewFile *.hpp SetTab 4
 
+if &filetype == "cpp" || &filetype == "c"
+  autocmd BufEnter,TextChanged <buffer> lua require 'vim.lsp.buf'.semantic_tokens_full()
+endif
+
 " C/C++ indent options: fix extra indentation on function continuation
 set cino=(0,W4
 

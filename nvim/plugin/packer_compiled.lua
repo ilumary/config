@@ -134,6 +134,11 @@ _G.packer_plugins = {
     path = "/Users/christophbritsch/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
+  ["nvim-semantic-tokens"] = {
+    loaded = true,
+    path = "/Users/christophbritsch/.local/share/nvim/site/pack/packer/start/nvim-semantic-tokens",
+    url = "https://github.com/theHamsta/nvim-semantic-tokens"
+  },
   ["nvim-treesitter"] = {
     loaded = true,
     path = "/Users/christophbritsch/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
