@@ -31,6 +31,7 @@ return require('packer').startup(function(use)
   use 'morhetz/gruvbox'
   use 'nvim-treesitter/nvim-treesitter'
   use 'theHamsta/nvim-semantic-tokens'
+  use 'tikhomirov/vim-glsl'
 
   if packer_bootstrap then
     require('packer').sync()
