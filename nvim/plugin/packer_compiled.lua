@@ -104,13 +104,6 @@ _G.packer_plugins = {
     path = "/Users/christophbritsch/.local/share/nvim/site/pack/packer/start/fzf.vim",
     url = "https://github.com/junegunn/fzf.vim"
   },
-  ["glslView-nvim"] = {
-    loaded = false,
-    needs_bufread = false,
-    only_cond = false,
-    path = "/Users/christophbritsch/.local/share/nvim/site/pack/packer/opt/glslView-nvim",
-    url = "https://github.com/timtro/glslView-nvim"
-  },
   gruvbox = {
     loaded = true,
     path = "/Users/christophbritsch/.local/share/nvim/site/pack/packer/start/gruvbox",
@@ -184,13 +177,6 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
-vim.cmd [[augroup packer_load_aucmds]]
-vim.cmd [[au!]]
-  -- Filetype lazy-loads
-time([[Defining lazy-load filetype autocommands]], true)
-vim.cmd [[au FileType glsl ++once lua require("packer.load")({'glslView-nvim'}, { ft = "glsl" }, _G.packer_plugins)]]
-time([[Defining lazy-load filetype autocommands]], false)
-vim.cmd("augroup END")
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
