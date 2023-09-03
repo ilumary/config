@@ -25,6 +25,7 @@ return require('packer').startup(function(use)
   use 'hrsh7th/cmp-buffer'
   use 'hrsh7th/cmp-path'
   use 'hrsh7th/cmp-cmdline'
+  use 'hrsh7th/cmp-vsnip'
   use 'hrsh7th/nvim-cmp'
   use 'hrsh7th/vim-vsnip'
   use 'zefei/vim-colortuner'
@@ -32,6 +33,13 @@ return require('packer').startup(function(use)
   use 'nvim-treesitter/nvim-treesitter'
   use 'theHamsta/nvim-semantic-tokens'
   use 'tikhomirov/vim-glsl'
+  use ({
+      'j-hui/fidget.nvim',
+      config = function()
+          require('fidget').setup()
+      end
+  })
+  use 'simrat39/rust-tools.nvim'
 
   if packer_bootstrap then
     require('packer').sync()

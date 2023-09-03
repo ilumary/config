@@ -10,9 +10,6 @@ au BufEnter,BufNew *.hpp nnoremap <silent> ;vp :rightbelow vs %<.cpp<CR>
 au BufEnter,BufNew *.cpp nnoremap <silent> ;xp :leftabove split %<.hpp<CR>
 au BufEnter,BufNew *.hpp nnoremap <silent> ;xp :rightbelow split %<.cpp<CR>
 
-" surround with std::optional
-nnoremap <silent> ;cso :execute 's/\(' . expand('<cWORD>') . '\)/std::optional<\1>'<CR>:noh<CR>
-
 " enable history for fzf
 let g:fzf_history_dir = '~/.local/share/fzf-history'
 
@@ -105,6 +102,8 @@ autocmd BufRead,BufNewFile *.c SetTab 4
 autocmd BufRead,BufNewFile *.h SetTab 4
 autocmd BufRead,BufNewFile *.cpp SetTab 4
 autocmd BufRead,BufNewFile *.hpp SetTab 4
+
+SetTab 4
 
 " C/C++ indent options: fix extra indentation on function continuation
 set cino=(0,W4
