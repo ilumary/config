@@ -33,6 +33,9 @@ return require('packer').startup(function(use)
   use 'nvim-treesitter/nvim-treesitter'
   use 'theHamsta/nvim-semantic-tokens'
   use 'tikhomirov/vim-glsl'
+  use 'sainnhe/gruvbox-material'
+  use 'ajmwagar/vim-deus'
+  use 'lifepillar/vim-gruvbox8'
   use ({
       'j-hui/fidget.nvim',
       config = function()

@@ -41,9 +41,7 @@ let c_no_curly_error=1
 set grepprg=rg\ --vimgrep\ --smart-case\ --follow
 
 " Colorscheme
-let g:gruvbox_contrast_dark='medium'
-let g:gruvbox_contrast_light='hard'
-colorscheme gruvbox
+colorscheme gruvbox8
 
 " Syntax highlighting
 syntax on
